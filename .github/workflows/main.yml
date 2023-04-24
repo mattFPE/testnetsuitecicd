@@ -2,7 +2,8 @@ name: setup node
 run-name: ${{ github.actor }} Started a process
 on:
   push:
-  - main
+    branches:
+    - main
 jobs:
   setup:
     name: setup node
