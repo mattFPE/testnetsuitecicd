@@ -9,5 +9,5 @@ jobs:
     name: setup node
     runs-on: ubuntu-latest
     steps:
-      - run: apt-get install node
+      - uses: actions/setup-node@v3.6.0
       - run: node -v
