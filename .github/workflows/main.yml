@@ -1,2 +1,12 @@
 name: setup node
 run-name: ${{ github.actor }} Started a process
+on:
+  push:
+  - main
+jobs:
+  setup:
+    name: setup node
+    runs-on: ubuntu-latest
+    steps:
+      - run: apt-get install node
+      - run: node -v
